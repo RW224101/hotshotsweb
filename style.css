@@ -1,0 +1,375 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #275DAD;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    z-index: 99;
+}
+
+body {
+    background: #FCF7F8;
+    min-height: 150vh;
+}
+
+.logo {
+    font-size: 3em;
+    color: #FCF7F8;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 2em;
+    color: #FCF7F8;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+.navigation a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background: #FCF7F8;
+        border-radius: 5px;
+        transform: scaleX(0);
+        transition: transform .5s;
+}
+
+.navigation a:hover::after {
+        transform: scaleX(1);
+}
+
+.footer {
+    padding: 15px 0;
+    background-color: #CED3DC;
+    position: sticky;
+    top: 100%;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #275DAD;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 2px solid #FCF7F8;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover {
+    opacity: 0.9;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+
+}
+
+.footer ul li a:hover {
+    opacity: 1;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.signup-box {
+    width: 450px;
+    height: 550px;
+    margin: auto;
+    background-color: #CED3DC;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+h1 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+form {
+    width: 300px;
+    margin: auto;
+}
+
+form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+form input{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+}
+
+input[type="button"] {
+    width: 300px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #275DAD;
+    color: #FCF7F8;
+    font-size: 18px;
+}
+
+input[type="button"]:hover {
+    background-color: #0f3a79;
+    transition: .3s;
+}
+
+p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.para-2 a{
+    color: #275DAD;
+}
+
+.container p {
+    text-align: center;
+    margin: 30px 0px 10px 0px;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #CED3DC;
+    padding: 20px 20px 0px 20px;
+    width: 25%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #CED3DC;
+}
+
+.profile-img {
+    width: 220px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 1.4em;
+    margin-top: 20px;
+    color: black;
+}
+
+.card a {
+    text-decoration: none;
+    margin: 110px;
+}
+
+.card:hover {
+    background-color: #FCF7F8;
+    border-style: solid;
+    border-color: black;
+    transition: .5s;
+    opacity: 0.9;
+}
+
+.job-content {
+    text-align: center;
+    background-color: #CED3DC;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 1.4em;
+    word-spacing: 3px;
+}
+
+.application {
+    text-align: center;
+    background-color: #CED3DC;
+    max-width: 900px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 1.4em;
+    word-spacing: 3px;
+}
+
+.job-content p {
+    font-size: 1em;
+    word-spacing: 3px;
+}
+
+.job-content ul {
+    padding: 15px;
+}
+
+.job-content h1 {
+    font-size: 1.6em;
+}
+
+.job-content h2 {
+    font-size: 1.4em;
+    padding: 10px;
+}
+
+.application button {
+    background-color: #275DAD;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    width: 800px;
+    height: 50px;
+    margin: 20px;
+    margin-left: -250px;
+    font-size: 1em;
+}
+
+.wrapper2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-img {
+    width: 170px;
+    height: 150px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.course-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 1.4em;
+    margin-top: 20px;
+    color: black;
+}
+
+.container2 h2 {
+    word-spacing: 3px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+}
+
+.container2 p {
+    text-align: center;
+    margin: 30px 0px 10px 0px;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.course {
+    background-color: #CED3DC;
+    width: 25%;
+    max-width: 200px;
+    margin: 30px;
+    border-radius: 10px;
+    align-content: center;
+    border-color: #CED3DC;
+    border-style: solid;
+}
+
+.course a {
+    text-decoration: none;
+    margin: 60px;
+}
+
+.course:hover {
+    background-color: #FCF7F8;
+    border-style: solid;
+    border-color: black;
+    transition: .5s;
+    opacity: 0.9;
+}
+
+button:hover {
+    background-color: #0f3a79;
+    transition: .3s;
+}
